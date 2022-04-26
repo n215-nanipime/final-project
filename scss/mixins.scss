@@ -1,0 +1,34 @@
+@mixin promo($bgColor: #faebd7) {
+  height: 304px;
+  width: 235px;
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin promo2($bgColor: #faebd7) {
+  width: 298px;
+  height: 347px;
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin site-button($cornerRadius: 50px, $btnPadding: 10px 15px) {
+  background-color: $site-background;
+  padding: $btnPadding;
+  border-radius: $cornerRadius;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}

@@ -1,0 +1,142 @@
+.gallery {
+  margin-top: 110px;
+  margin-bottom: 100px;
+
+  .gallery-header {
+    
+    h1 {
+      margin-bottom: 1%;
+      font-family: GilSans;
+      font-size: 25px;
+      font-weight: normal;
+      margin-top: -30px;
+    }
+
+    .border-bottom {
+      width: 171px;
+      height: 2px;
+      background-color: #000;
+      margin-bottom: 3%;
+    }
+
+    .img-row-one {
+      display: flex;
+      justify-content: space-between;
+
+    .yellow-img {
+      cursor: pointer;
+      width: 489px;
+      height: 187px;
+      background-image: linear-gradient(
+      rgba($site-yellow, 0.8),
+      rgba($site-yellow, 0.8)
+    ),
+    url(../images/gallery/1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .pink-img {
+      cursor: pointer;
+      width: 187px;
+      height: 187px;
+      background-image: linear-gradient(
+      rgba($site-pink, 0.8),
+      rgba($site-pink, 0.8)
+    ),
+    url(../images/gallery/2.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .green-img {
+      cursor: pointer;
+      width: 265px;
+      height: 187px;
+      background-image: linear-gradient(
+      rgba($site-green, 0.8),
+      rgba($site-green, 0.8)
+    ),
+    url(../images/gallery/3.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .img-row-two {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+  .purple-img {
+    cursor: pointer;
+    width: 603px;
+    height: 306px;
+    background-image: linear-gradient(
+    rgba($site-purple, 0.8),
+    rgba($site-purple, 0.8)
+  ),
+  url(../images/gallery/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .blue-green-img {
+    cursor: pointer;
+    width: 355px;
+    height: 306px;
+    background-image: linear-gradient(
+    rgba($site-blue-green, 0.8),
+    rgba($site-blue-green, 0.8)
+  ),
+  url(../images/gallery/5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  }
+  }
+}
+
+// media query that breaks at
+@media all and (max-width: 800px) {
+  .gallery {
+    text-align: center;
+    flex-direction: column;
+    .gallery-header {
+      .border-bottom {
+        margin: 0 auto;
+        margin-bottom: 3%;
+      }
+      .img-row-one {
+        flex-direction: column;
+        
+        .yellow-img {
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+        .pink-img {
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+        .green-img {
+          margin: 0 auto;
+        }
+      }
+      .img-row-two {
+        flex-direction: column;
+        .purple-img {
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+        .blue-green-img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

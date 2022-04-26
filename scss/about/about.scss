@@ -1,0 +1,73 @@
+.about {
+  margin-top: 110px;
+  margin-bottom: 100px;
+
+  .about-header {
+    .about-img {
+      width: $content-width;
+      height: 378px;
+      background-image: linear-gradient(
+      rgba($site-yellow, 0.8),
+      rgba($site-yellow, 0.8)
+    ),
+    url(../images/about.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    h1 {
+      margin-bottom: 1%;
+      font-family: GilSans;
+      font-size: 25px;
+      font-weight: normal;
+      margin-top: -30px;
+    }
+
+    p {
+      font-family: GilSans;
+      font-size: 16px;
+      font-style: italic;
+      opacity: 50%;
+    }
+
+    .border-bottom {
+      width: 171px;
+      height: 2px;
+      background-color: #000;
+      margin-bottom: 3%;
+    }
+  }
+}
+
+// media query that breaks at
+@media all and (max-width: 800px) {
+  .about {
+    text-align: center;
+    flex-direction: column;
+    .about-header {
+      .border-bottom {
+        margin: 0 auto;
+        margin-bottom: 3%;
+      }
+    }
+    .about-client-quotes {
+      .border-bottom-two {
+        margin: 0 auto;
+        margin-bottom: 3%;
+      }
+      .client-box {
+        flex-direction: column;
+        .client-image {
+          margin: 0 auto;
+        }
+        .client-quote {
+          margin: 0 auto;
+        }
+        .client-name {
+          position: relative;
+        }
+      }
+    }
+  }
+}

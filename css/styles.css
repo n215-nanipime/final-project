@@ -1,0 +1,1750 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/proxima_nova_extra_condensed_thin-webfont.woff);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(../fonts/proxima-nova-thin-webfont.woff);
+}
+@font-face {
+  font-family: myThirdFont;
+  src: url(../fonts/proximanovascosfextracondensed-webfont.woff);
+}
+@font-face {
+  font-family: GilSans;
+  src: url(../fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: PTSerif;
+  src: url(../fonts/PTSerif-Regular.ttf);
+}
+nav {
+  max-width: 980px;
+  margin: 0 auto;
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid;
+  border-bottom-color: #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+  z-index: 99;
+}
+nav .logo {
+  width: 92px;
+  height: 38px;
+}
+nav .logo .logo-black {
+  background-image: url(../images/logo/logo-black.svg);
+}
+nav .logo .logo-white {
+  background-image: url(../images/logo/logo-white.svg);
+}
+nav .links a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #000000;
+}
+nav .links .white-text {
+  color: #ffffff;
+}
+nav .links .pink-text {
+  color: #EE4367;
+}
+nav .links .black-text {
+  color: #000000;
+}
+nav .links span {
+  color: #EE4367;
+  margin-left: 10px;
+}
+
+.banner {
+  max-width: 1280px;
+  height: 500px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -80px auto 0 auto;
+  position: relative;
+}
+.banner .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+.banner .hero-text .ni-text {
+  color: #EE4367;
+  font-weight: 500;
+  padding-bottom: 5%;
+}
+.banner .hero-text h1 {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: lighter;
+  font-family: Proxima Nova ScOsf ExCn Rg, sans-serif;
+}
+.banner .hero-text button {
+  background-color: #EE4367;
+  width: 121px;
+  height: 40px;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+}
+.banner .hero-text p {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  padding-bottom: 5%;
+}
+
+.purple-content {
+  font-family: "Gill Sans", sans-serif;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5%;
+  background-color: #540D6E;
+}
+.purple-content .events-title {
+  font-size: 25px;
+  margin-bottom: 3px;
+  padding-top: 5%;
+  color: #ffffff;
+}
+.purple-content .border-bottom-two {
+  width: 392px;
+  height: 1px;
+  background-color: #ffffff;
+  margin-bottom: 3%;
+}
+.purple-content .upcoming-events {
+  display: flex;
+  justify-content: space-between;
+}
+.purple-content .upcoming-events .event-box {
+  max-width: 1198px;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+  margin-right: 4px;
+}
+.purple-content .upcoming-events .event-box .post-date {
+  width: 60px;
+  height: 60px;
+  font-size: 22;
+  text-align: center;
+  background-color: #EE4367;
+  color: #ffffff;
+  position: absolute;
+}
+.purple-content .upcoming-events .event-box .post-date .post-day {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+.purple-content .upcoming-events .event-box .event-content {
+  max-width: 980px;
+  padding-left: 80px;
+}
+.purple-content .upcoming-events .event-box .event-content .post-info {
+  max-width: 140px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.purple-content .upcoming-events .event-box .event-content .post-info .event-white-text {
+  color: #ffffff;
+  font-size: 13px;
+}
+.purple-content .upcoming-events .event-box .event-content .post-info .event-pink-text {
+  color: #EE4367;
+  font-size: 13px;
+}
+
+@media all and (max-width: 800px) {
+  .purple-content {
+    text-align: center;
+    flex-direction: column;
+  }
+  .purple-content .border-bottom-two {
+    margin: 0 auto;
+  }
+  .purple-content .upcoming-events {
+    flex-direction: column;
+  }
+  .purple-content .upcoming-events .event-box {
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+}
+.white-content {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 7%;
+  max-width: 1280px;
+}
+.white-content .white-box-info {
+  max-width: 789px;
+  height: 90px;
+  margin: 0 auto;
+  margin-bottom: 12%;
+}
+.white-content .white-box-info .home-paragraph {
+  color: #FFD140;
+  font-family: GilSans;
+  font-size: 15px;
+  font-weight: 500;
+}
+.white-content .white-box-info .person-name {
+  font-family: PTSerif;
+  font-size: 15px;
+  color: #EE4367;
+}
+.white-content .white-box-info .person-title {
+  font-family: PTSerif;
+  font-size: 10px;
+  color: #A8A8A8;
+}
+
+@media screen and (max-width: 800px) {
+  .white-content {
+    text-align: center;
+  }
+}
+.about {
+  margin-top: 110px;
+  margin-bottom: 100px;
+}
+.about .about-header .about-img {
+  width: 980px;
+  height: 378px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .about-header h1 {
+  margin-bottom: 1%;
+  font-family: GilSans;
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: -30px;
+}
+.about .about-header p {
+  font-family: GilSans;
+  font-size: 16px;
+  font-style: italic;
+  opacity: 50%;
+}
+.about .about-header .border-bottom {
+  width: 171px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 3%;
+}
+
+@media all and (max-width: 800px) {
+  .about {
+    text-align: center;
+    flex-direction: column;
+  }
+  .about .about-header .border-bottom {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+  .about .about-client-quotes .border-bottom-two {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+  .about .about-client-quotes .client-box {
+    flex-direction: column;
+  }
+  .about .about-client-quotes .client-box .client-image {
+    margin: 0 auto;
+  }
+  .about .about-client-quotes .client-box .client-quote {
+    margin: 0 auto;
+  }
+  .about .about-client-quotes .client-box .client-name {
+    position: relative;
+  }
+}
+.about-promo {
+  max-width: 980px;
+  min-width: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.about-promo .promo {
+  width: 298px;
+  height: 347px;
+  background-color: #faebd7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/tour-israel/israel-tour-01.jpg);
+}
+.about-promo .promo .promo-text {
+  font-size: 24px;
+  font-family: mySecondFont;
+  margin-bottom: 60px;
+}
+.about-promo .promo .read-btn {
+  background-color: #79addc;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.about-promo #promo2 {
+  background-image: url(../images/tour-israel/israel-tour-02.jpg);
+}
+.about-promo #promo3 {
+  background-image: url(../images/tour-israel/israel-tour-03.jpg);
+}
+
+.about-promo2 {
+  max-width: 980px;
+  min-width: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.about-promo2 .promo {
+  width: 298px;
+  height: 347px;
+  background-color: #faebd7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/tour-usa/usa-tour-01.jpg);
+}
+.about-promo2 .promo .promo-text {
+  font-size: 24px;
+  font-family: mySecondFont;
+  margin-bottom: 60px;
+}
+.about-promo2 .promo .read-btn {
+  background-color: #79addc;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.about-promo2 #promo2 {
+  background-image: url(../images/tour-usa/usa-tour-02.jpg);
+}
+.about-promo2 #promo3 {
+  background-image: url(../images/tour-usa/usa-tour-03.jpg);
+}
+
+.about-promo3 {
+  max-width: 980px;
+  min-width: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.about-promo3 .promo {
+  width: 298px;
+  height: 347px;
+  background-color: #faebd7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/tour-aus/aus-tour-01.jpg);
+}
+.about-promo3 .promo .promo-text {
+  font-size: 24px;
+  font-family: mySecondFont;
+  margin-bottom: 60px;
+}
+.about-promo3 .promo .read-btn {
+  background-color: #79addc;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.about-promo3 #promo2 {
+  background-image: url(../images/tour-aus/aus-tour-02.jpg);
+}
+.about-promo3 #promo3 {
+  background-image: url(../images/tour-aus/aus-tour-03.jpg);
+}
+
+.about-promo4 {
+  max-width: 980px;
+  min-width: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.about-promo4 .promo {
+  width: 298px;
+  height: 347px;
+  background-color: #faebd7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/tour-nz/nz-tour-01.jpg);
+}
+.about-promo4 .promo .promo-text {
+  font-size: 24px;
+  font-family: mySecondFont;
+  margin-bottom: 60px;
+}
+.about-promo4 .promo .read-btn {
+  background-color: #79addc;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.about-promo4 #promo2 {
+  background-image: url(../images/tour-nz/nz-tour-02.jpg);
+}
+.about-promo4 #promo3 {
+  background-image: url(../images/tour-nz/nz-tour-03.jpg);
+}
+
+.about-promo5 {
+  max-width: 980px;
+  min-width: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.about-promo5 .promo {
+  width: 298px;
+  height: 347px;
+  background-color: #faebd7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/tour-france/france-tour-01.jpg);
+}
+.about-promo5 .promo .promo-text {
+  font-size: 24px;
+  font-family: mySecondFont;
+  margin-bottom: 60px;
+}
+.about-promo5 .promo .read-btn {
+  background-color: #79addc;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.about-promo5 #promo2 {
+  background-image: url(../images/tour-france/france-tour-02.jpg);
+}
+.about-promo5 #promo3 {
+  background-image: url(../images/tour-france/france-tour-03.jpg);
+}
+
+.about-promo6 {
+  max-width: 980px;
+  min-width: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.about-promo6 .promo {
+  width: 298px;
+  height: 347px;
+  background-color: #faebd7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/tour-egypt/egypt-tour-01.jpg);
+}
+.about-promo6 .promo .promo-text {
+  font-size: 24px;
+  font-family: mySecondFont;
+  margin-bottom: 60px;
+}
+.about-promo6 .promo .read-btn {
+  background-color: #79addc;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.about-promo6 #promo2 {
+  background-image: url(../images/tour-egypt/egypt-tour-02.jpg);
+}
+.about-promo6 #promo3 {
+  background-image: url(../images/tour-egypt/egypt-tour-03.jpg);
+}
+
+.about-promo7 {
+  max-width: 980px;
+  min-width: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.about-promo7 .promo {
+  width: 298px;
+  height: 347px;
+  background-color: #faebd7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/tour-japan/japan-tour-01.jpg);
+}
+.about-promo7 .promo .promo-text {
+  font-size: 24px;
+  font-family: mySecondFont;
+  margin-bottom: 60px;
+}
+.about-promo7 .promo .read-btn {
+  background-color: #79addc;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.about-promo7 #promo2 {
+  background-image: url(../images/tour-japan/japan-tour-02.jpg);
+}
+.about-promo7 #promo3 {
+  background-image: url(../images/tour-japan/japan-tour-03.jpg);
+}
+
+.about-promo8 {
+  max-width: 980px;
+  min-width: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.about-promo8 .promo {
+  width: 298px;
+  height: 347px;
+  background-color: #faebd7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/tour-canada/canada-tour-01.jpg);
+}
+.about-promo8 .promo .promo-text {
+  font-size: 24px;
+  font-family: mySecondFont;
+  margin-bottom: 60px;
+}
+.about-promo8 .promo .read-btn {
+  background-color: #79addc;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.about-promo8 #promo2 {
+  background-image: url(../images/tour-canada/canada-tour-02.jpg);
+}
+.about-promo8 #promo3 {
+  background-image: url(../images/tour-canada/canada-tour-03.jpg);
+}
+
+.about-promo9 {
+  max-width: 980px;
+  min-width: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.about-promo9 .promo {
+  width: 298px;
+  height: 347px;
+  background-color: #faebd7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/tour-uae/uae-tour-01.jpg);
+}
+.about-promo9 .promo .promo-text {
+  font-size: 24px;
+  font-family: mySecondFont;
+  margin-bottom: 60px;
+}
+.about-promo9 .promo .read-btn {
+  background-color: #79addc;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.about-promo9 #promo2 {
+  background-image: url(../images/tour-uae/uae-tour-02.jpg);
+}
+.about-promo9 #promo3 {
+  background-image: url(../images/tour-uae/uae-tour-03.jpg);
+}
+
+.about-hero {
+  max-width: 980px;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+}
+.about-hero .about-hero-text {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.about-hero .about-price-text {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin-bottom: 0;
+}
+
+.about-hero2 {
+  max-width: 980px;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+}
+.about-hero2 .about-hero-text {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.about-hero2 .about-price-text {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin-bottom: 0;
+}
+
+.about-hero3 {
+  max-width: 980px;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+}
+.about-hero3 .about-hero-text {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.about-hero3 .about-price-text {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin-bottom: 0;
+}
+
+.about-hero4 {
+  max-width: 980px;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-04.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+}
+.about-hero4 .about-hero-text {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.about-hero4 .about-price-text {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin-bottom: 0;
+}
+
+.about-hero5 {
+  max-width: 980px;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-05.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+}
+.about-hero5 .about-hero-text {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.about-hero5 .about-price-text {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin-bottom: 0;
+}
+
+.about-hero6 {
+  max-width: 980px;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-06.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+}
+.about-hero6 .about-hero-text {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.about-hero6 .about-price-text {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin-bottom: 0;
+}
+
+.about-hero7 {
+  max-width: 980px;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-07.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+}
+.about-hero7 .about-hero-text {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.about-hero7 .about-price-text {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin-bottom: 0;
+}
+
+.about-hero8 {
+  max-width: 980px;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-08.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+}
+.about-hero8 .about-hero-text {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.about-hero8 .about-price-text {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin-bottom: 0;
+}
+
+.about-hero9 {
+  max-width: 980px;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-09.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+}
+.about-hero9 .about-hero-text {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.about-hero9 .about-price-text {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin-bottom: 0;
+}
+
+.days .day-header h1 {
+  margin-bottom: 2px;
+  font-family: mySecondFont, myThirdFont;
+  font-size: 60px;
+  font-style: bold;
+}
+.days .day-header p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 10%;
+}
+.days .day-header .title-bottom {
+  width: 171px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 3%;
+}
+.days .book-btn {
+  background-color: #79addc;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 133px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+@media all and (max-width: 800px) {
+  .days {
+    text-align: center;
+    flex-direction: column;
+  }
+  .days .day-header .title-bottom {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+}
+.gallery {
+  margin-top: 110px;
+  margin-bottom: 100px;
+}
+.gallery .gallery-header h1 {
+  margin-bottom: 1%;
+  font-family: GilSans;
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: -30px;
+}
+.gallery .gallery-header .border-bottom {
+  width: 171px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 3%;
+}
+.gallery .gallery-header .img-row-one {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery .gallery-header .img-row-one .yellow-img {
+  cursor: pointer;
+  width: 489px;
+  height: 187px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/gallery/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .gallery-header .img-row-one .pink-img {
+  cursor: pointer;
+  width: 187px;
+  height: 187px;
+  background-image: linear-gradient(rgba(238, 67, 103, 0.8), rgba(238, 67, 103, 0.8)), url(../images/gallery/2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .gallery-header .img-row-one .green-img {
+  cursor: pointer;
+  width: 265px;
+  height: 187px;
+  background-image: linear-gradient(rgba(8, 173, 105, 0.8), rgba(8, 173, 105, 0.8)), url(../images/gallery/3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .gallery-header .img-row-two {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.gallery .gallery-header .img-row-two .purple-img {
+  cursor: pointer;
+  width: 603px;
+  height: 306px;
+  background-image: linear-gradient(rgba(84, 13, 110, 0.8), rgba(84, 13, 110, 0.8)), url(../images/gallery/4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .gallery-header .img-row-two .blue-green-img {
+  cursor: pointer;
+  width: 355px;
+  height: 306px;
+  background-image: linear-gradient(rgba(59, 206, 171, 0.8), rgba(59, 206, 171, 0.8)), url(../images/gallery/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media all and (max-width: 800px) {
+  .gallery {
+    text-align: center;
+    flex-direction: column;
+  }
+  .gallery .gallery-header .border-bottom {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+  .gallery .gallery-header .img-row-one {
+    flex-direction: column;
+  }
+  .gallery .gallery-header .img-row-one .yellow-img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .gallery .gallery-header .img-row-one .pink-img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .gallery .gallery-header .img-row-one .green-img {
+    margin: 0 auto;
+  }
+  .gallery .gallery-header .img-row-two {
+    flex-direction: column;
+  }
+  .gallery .gallery-header .img-row-two .purple-img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .gallery .gallery-header .img-row-two .blue-green-img {
+    margin: 0 auto;
+  }
+}
+.galleryOne {
+  margin-top: 5%;
+  margin-bottom: 100px;
+}
+.galleryOne .gallery-header .gallery-img {
+  width: 980px;
+  height: 378px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/gallery/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.galleryOne .gallery-header h1 {
+  margin-bottom: 1%;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 300px;
+  font-weight: normal;
+  margin-top: -270px;
+  color: #FFD140;
+  text-shadow: 1px 1px black;
+}
+.galleryOne .gallery-header h2 {
+  margin-bottom: 1%;
+  margin-left: 24%;
+  font-family: GilSans;
+  font-size: 140px;
+  font-weight: normal;
+  margin-top: -210px;
+  color: #FFD140;
+  text-shadow: 1px 1px black;
+}
+.galleryOne .gallery-header .text-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.galleryOne .gallery-header .text-boxes p {
+  font-family: GilSans;
+  font-size: 16px;
+  font-style: italic;
+  opacity: 50%;
+  width: 50%;
+}
+.galleryOne .gallery-header .border-bottom {
+  width: 171px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 3%;
+}
+
+@media all and (max-width: 800px) {
+  .gallery-one {
+    text-align: center;
+    flex-direction: column;
+  }
+  .gallery-one .gallery-header .border-bottom {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+}
+.galleryTwo {
+  margin-top: 5%;
+  margin-bottom: 100px;
+}
+.galleryTwo .gallery-header .gallery-img {
+  width: 980px;
+  height: 378px;
+  background-image: linear-gradient(rgba(238, 67, 103, 0.8), rgba(238, 67, 103, 0.8)), url(../images/gallery/2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.galleryTwo .gallery-header h1 {
+  margin-bottom: 1%;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 300px;
+  font-weight: normal;
+  margin-top: -270px;
+  color: #EE4367;
+  text-shadow: 1px 1px black;
+}
+.galleryTwo .gallery-header h2 {
+  margin-bottom: 1%;
+  margin-left: 24%;
+  font-family: GilSans;
+  font-size: 140px;
+  font-weight: normal;
+  margin-top: -210px;
+  color: #EE4367;
+  text-shadow: 1px 1px black;
+}
+.galleryTwo .gallery-header .text-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.galleryTwo .gallery-header .text-boxes p {
+  font-family: GilSans;
+  font-size: 16px;
+  font-style: italic;
+  opacity: 50%;
+  width: 50%;
+}
+.galleryTwo .gallery-header .border-bottom {
+  width: 171px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 3%;
+}
+
+@media all and (max-width: 800px) {
+  .galleryTwo {
+    text-align: center;
+    flex-direction: column;
+  }
+  .galleryTwo .gallery-header .border-bottom {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+}
+.galleryThree {
+  margin-top: 5%;
+  margin-bottom: 100px;
+}
+.galleryThree .gallery-header .gallery-img {
+  width: 980px;
+  height: 378px;
+  background-image: linear-gradient(rgba(8, 173, 105, 0.8), rgba(8, 173, 105, 0.8)), url(../images/gallery/3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.galleryThree .gallery-header h1 {
+  margin-bottom: 1%;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 300px;
+  font-weight: normal;
+  margin-top: -270px;
+  color: #08AD69;
+  text-shadow: 1px 1px black;
+}
+.galleryThree .gallery-header h2 {
+  margin-bottom: 1%;
+  margin-left: 24%;
+  font-family: GilSans;
+  font-size: 140px;
+  font-weight: normal;
+  margin-top: -210px;
+  color: #08AD69;
+  text-shadow: 1px 1px black;
+}
+.galleryThree .gallery-header .text-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.galleryThree .gallery-header .text-boxes p {
+  font-family: GilSans;
+  font-size: 16px;
+  font-style: italic;
+  opacity: 50%;
+  width: 50%;
+}
+.galleryThree .gallery-header .border-bottom {
+  width: 171px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 3%;
+}
+
+@media all and (max-width: 800px) {
+  .galleryThree {
+    text-align: center;
+    flex-direction: column;
+  }
+  .galleryThree .gallery-header .border-bottom {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+}
+.galleryFour {
+  margin-top: 5%;
+  margin-bottom: 100px;
+}
+.galleryFour .gallery-header .gallery-img {
+  width: 980px;
+  height: 378px;
+  background-image: linear-gradient(rgba(84, 13, 110, 0.8), rgba(84, 13, 110, 0.8)), url(../images/gallery/4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.galleryFour .gallery-header h1 {
+  margin-bottom: 1%;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 300px;
+  font-weight: normal;
+  margin-top: -270px;
+  color: #540D6E;
+  text-shadow: 1px 1px black;
+}
+.galleryFour .gallery-header h2 {
+  margin-bottom: 1%;
+  margin-left: 24%;
+  font-family: GilSans;
+  font-size: 140px;
+  font-weight: normal;
+  margin-top: -210px;
+  color: #540D6E;
+  text-shadow: 1px 1px black;
+}
+.galleryFour .gallery-header .text-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.galleryFour .gallery-header .text-boxes p {
+  font-family: GilSans;
+  font-size: 16px;
+  font-style: italic;
+  opacity: 50%;
+  width: 50%;
+}
+.galleryFour .gallery-header .border-bottom {
+  width: 171px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 3%;
+}
+
+@media all and (max-width: 800px) {
+  .gallery-four {
+    text-align: center;
+    flex-direction: column;
+  }
+  .gallery-four .gallery-header .border-bottom {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+}
+.galleryFive {
+  margin-top: 5%;
+  margin-bottom: 100px;
+}
+.galleryFive .gallery-header .gallery-img {
+  width: 980px;
+  height: 378px;
+  background-image: linear-gradient(rgba(59, 206, 171, 0.8), rgba(59, 206, 171, 0.8)), url(../images/gallery/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.galleryFive .gallery-header h1 {
+  margin-bottom: 1%;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 300px;
+  font-weight: normal;
+  margin-top: -270px;
+  color: #3BCEAB;
+  text-shadow: 1px 1px black;
+}
+.galleryFive .gallery-header h2 {
+  margin-bottom: 1%;
+  margin-left: 24%;
+  font-family: GilSans;
+  font-size: 140px;
+  font-weight: normal;
+  margin-top: -210px;
+  color: #3BCEAB;
+  text-shadow: 1px 1px black;
+}
+.galleryFive .gallery-header .text-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.galleryFive .gallery-header .text-boxes p {
+  font-family: GilSans;
+  font-size: 16px;
+  font-style: italic;
+  opacity: 50%;
+  width: 50%;
+}
+.galleryFive .gallery-header .border-bottom {
+  width: 171px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 3%;
+}
+
+@media all and (max-width: 800px) {
+  .galleryFive {
+    text-align: center;
+    flex-direction: column;
+  }
+  .galleryFive .gallery-header .border-bottom {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+}
+.blog {
+  margin-bottom: 180px;
+}
+.blog .about-blog-posts {
+  margin-top: 5%;
+}
+.blog .about-blog-posts .blog-title {
+  font-family: mySecondFont, myThirdFont;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.blog .about-blog-posts .border-bottom-two {
+  width: 255px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 3%;
+}
+.blog .about-blog-posts .blog-row-one {
+  display: flex;
+  justify-content: space-between;
+}
+.blog .about-blog-posts .blog-row-one .blog-box {
+  cursor: pointer;
+  max-width: 460px;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+}
+.blog .about-blog-posts .blog-row-one .blog-box .post-date {
+  width: 60px;
+  height: 60px;
+  font-size: 22;
+  text-align: center;
+  background-color: #EE4367;
+  color: #ffffff;
+  position: absolute;
+}
+.blog .about-blog-posts .blog-row-one .blog-box .post-date .post-day {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.blog .about-blog-posts .blog-row-one .blog-box .post-content {
+  margin-left: 20%;
+}
+.blog .about-blog-posts .blog-row-one .blog-box .post-content .blog-image {
+  overflow: hidden;
+  margin-bottom: 3%;
+}
+.blog .about-blog-posts .blog-row-one .blog-box .post-content .blog-image img {
+  width: 360px;
+  height: 140px;
+}
+.blog .about-blog-posts .blog-row-one .blog-box .post-content .post-info {
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+.blog .about-blog-posts .blog-row-one .blog-box .post-content .post-info .blog-black-text {
+  color: #000000;
+}
+.blog .about-blog-posts .blog-row-one .blog-box .post-content .post-info .event-pink-text {
+  color: #EE4367;
+}
+.blog .about-blog-posts .blog-row-two {
+  display: flex;
+  justify-content: space-between;
+}
+.blog .about-blog-posts .blog-row-two .blog-box {
+  cursor: pointer;
+  max-width: 460px;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+}
+.blog .about-blog-posts .blog-row-two .blog-box .post-date {
+  width: 60px;
+  height: 60px;
+  font-size: 22;
+  text-align: center;
+  background-color: #EE4367;
+  color: #ffffff;
+  position: absolute;
+}
+.blog .about-blog-posts .blog-row-two .blog-box .post-date .post-day {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.blog .about-blog-posts .blog-row-two .blog-box .post-content {
+  margin-left: 20%;
+}
+.blog .about-blog-posts .blog-row-two .blog-box .post-content .blog-image {
+  overflow: hidden;
+  margin-bottom: 3%;
+}
+.blog .about-blog-posts .blog-row-two .blog-box .post-content .blog-image img {
+  width: 360px;
+  height: 140px;
+}
+.blog .about-blog-posts .blog-row-two .blog-box .post-content .post-info {
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+.blog .about-blog-posts .blog-row-two .blog-box .post-content .post-info .blog-black-text {
+  color: #000000;
+}
+.blog .about-blog-posts .blog-row-two .blog-box .post-content .post-info .event-pink-text {
+  color: #EE4367;
+}
+.blog .about-blog-posts .blog-row-three {
+  display: flex;
+  justify-content: space-between;
+}
+.blog .about-blog-posts .blog-row-three .blog-box {
+  cursor: pointer;
+  max-width: 460px;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+}
+.blog .about-blog-posts .blog-row-three .blog-box .post-date {
+  width: 60px;
+  height: 60px;
+  font-size: 22;
+  text-align: center;
+  background-color: #EE4367;
+  color: #ffffff;
+  position: absolute;
+}
+.blog .about-blog-posts .blog-row-three .blog-box .post-date .post-day {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.blog .about-blog-posts .blog-row-three .blog-box .post-content {
+  margin-left: 20%;
+}
+.blog .about-blog-posts .blog-row-three .blog-box .post-content .blog-image {
+  overflow: hidden;
+  margin-bottom: 3%;
+}
+.blog .about-blog-posts .blog-row-three .blog-box .post-content .blog-image img {
+  width: 360px;
+  height: 140px;
+}
+.blog .about-blog-posts .blog-row-three .blog-box .post-content .post-info {
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+.blog .about-blog-posts .blog-row-three .blog-box .post-content .post-info .blog-black-text {
+  color: #000000;
+}
+.blog .about-blog-posts .blog-row-three .blog-box .post-content .post-info .event-pink-text {
+  color: #EE4367;
+}
+
+@media all and (max-width: 800px) {
+  .blog {
+    text-align: center;
+    flex-direction: column;
+  }
+  .blog .about-blog-posts .border-bottom-two {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+  .blog .about-blog-posts .blog-row-one {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog .about-blog-posts .blog-row-one .blog-box {
+    margin: 0 auto;
+  }
+  .blog .about-blog-posts .blog-row-one .blog-box .post-content {
+    margin-left: 0;
+  }
+  .blog .about-blog-posts .blog-row-one .blog-box .post-content .blog-image {
+    margin: 0 auto;
+    width: 425px;
+  }
+  .blog .about-blog-posts .blog-row-one .blog-box .post-content .post-info {
+    margin: 0 auto;
+  }
+  .blog .about-blog-posts .blog-row-two {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog .about-blog-posts .blog-row-two .blog-box {
+    margin: 0 auto;
+  }
+  .blog .about-blog-posts .blog-row-two .blog-box .post-content {
+    margin-left: 0;
+  }
+  .blog .about-blog-posts .blog-row-two .blog-box .post-content .blog-image {
+    margin: 0 auto;
+    width: 425px;
+  }
+  .blog .about-blog-posts .blog-row-two .blog-box .post-content .post-info {
+    margin: 0 auto;
+  }
+  .blog .about-blog-posts .blog-row-three {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog .about-blog-posts .blog-row-three .blog-box {
+    margin: 0 auto;
+  }
+  .blog .about-blog-posts .blog-row-three .blog-box .post-content {
+    margin-left: 0;
+  }
+  .blog .about-blog-posts .blog-row-three .blog-box .post-content .blog-image {
+    margin: 0 auto;
+    width: 425px;
+  }
+  .blog .about-blog-posts .blog-row-three .blog-box .post-content .post-info {
+    margin: 0 auto;
+  }
+}
+.contact {
+  margin-bottom: 100px;
+  max-width: 980px;
+}
+.contact .about-contact {
+  margin-top: 7%;
+}
+.contact .about-contact .contact-title {
+  font-family: mySecondFont, myThirdFont;
+  font-size: 40px;
+  font-weight: bold;
+}
+.contact .about-contact .border-bottom-two {
+  width: 255px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 6%;
+}
+.contact .about-contact .contact-box {
+  max-width: 722px;
+  display: flex;
+  margin-bottom: 30px;
+  display: flex;
+}
+.contact .about-contact .contact-box .contact-image-address .contact-image {
+  width: 400px;
+}
+.contact .about-contact .contact-box .contact-image-address .contact-image img {
+  width: 100%;
+}
+.contact .about-contact .contact-box .contact-image-address .contact-address {
+  color: #000000;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  margin-top: 5%;
+}
+.contact .about-contact .contact-box .contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 7%;
+}
+.contact .about-contact .contact-box .contact-form input {
+  width: 529px;
+  height: 60px;
+  background-color: #f5f5f5;
+  border-style: none;
+  padding-left: 20px;
+  margin-bottom: 4%;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 16px;
+}
+.contact .about-contact .contact-box .contact-form .message-box {
+  height: 199px;
+  background-color: #f5f5f5;
+  border-style: none;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 16px;
+  margin-bottom: 8%;
+}
+.contact .about-contact .contact-box .contact-form .read-btn {
+  background-color: #79addc;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 2px;
+  width: 167px;
+  height: 60px;
+  padding: 4%;
+  background-color: #EE4367;
+}
+
+@media all and (max-width: 800px) {
+  .contact {
+    text-align: center;
+    flex-direction: column;
+  }
+  .contact .about-contact .border-bottom-two {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+  .contact .about-contact .contact-box {
+    flex-direction: column;
+  }
+  .contact .about-contact .contact-box .contact-image-address .contact-image {
+    margin: 0 auto;
+  }
+  .contact .about-contact .contact-box .contact-form {
+    margin: 0 auto;
+  }
+}
+footer {
+  height: 455px;
+  background-color: #EE4367;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+footer .footer-content {
+  color: #ffffff;
+  max-width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 16px;
+}
+footer .footer-content img {
+  margin-top: 36px;
+}
+footer .footer-content .footer-info {
+  text-align: center;
+}
+footer .footer-content .footer-input-button input {
+  width: 529px;
+  background-color: #F56B88;
+  border-style: none;
+  height: 60px;
+}
+footer .footer-content .footer-input-button ::placeholder {
+  color: #ffffff;
+  opacity: 50%;
+}
+footer .footer-content .footer-input-button .subscribe-btn {
+  width: 167px;
+  height: 60px;
+  color: #EE4367;
+  background-color: #ffffff;
+}
+footer .footer-content i {
+  width: 31.92;
+}
+footer .footer-content .copyright {
+  color: #FFFFFF;
+  opacity: 50%;
+}
+
+@media all and (max-width: 800px) {
+  footer .footer-content .footer-input-button {
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

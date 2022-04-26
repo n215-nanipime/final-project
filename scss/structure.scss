@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: $content-width;
+  margin: 0 auto;
+  // min-height: 200px;
+  // background-color: aquamarine;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/proxima_nova_extra_condensed_thin-webfont.woff);
+}
+
+@font-face {
+  font-family: mySecondFont;
+  src: url(../fonts/proxima-nova-thin-webfont.woff);
+}
+
+@font-face {
+  font-family: myThirdFont;
+  src: url(../fonts/proximanovascosfextracondensed-webfont.woff);
+}
+
+@font-face {
+  font-family: GilSans;
+  src: url(../fonts/GillSans.ttc);
+}
+
+@font-face {
+  font-family: PTSerif;
+  src: url(../fonts/PTSerif-Regular.ttf);
+}

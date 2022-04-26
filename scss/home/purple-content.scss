@@ -1,0 +1,95 @@
+  .purple-content {
+    font-family: 'Gill Sans', sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5%;
+    background-color: $site-purple;
+
+    .events-title {
+      font-size: 25px;
+      margin-bottom: 3px;
+      padding-top: 5%;
+      color: $site-white;
+    }
+
+    .border-bottom-two {
+      width: 392px;
+      height: 1px;
+      background-color: $site-white;
+      margin-bottom: 3%;
+    }
+
+    .upcoming-events {
+      display: flex;
+      justify-content: space-between;
+
+      .event-box {
+        max-width: 1198px;
+        display: flex;
+        position: relative;
+        margin-bottom: 30px;
+        display: flex;
+        position: relative;
+        margin-right: 4px;
+
+        .post-date {
+          width: 60px;
+          height: 60px;
+          font-size: 22;
+          text-align: center;
+          background-color: $site-pink;
+          color: $site-white;
+          position: absolute;
+
+          .post-day {
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            
+          }
+        }
+        .event-content {
+          max-width: $content-width;
+          padding-left: 80px;
+
+
+          .post-info {
+            max-width: 140px;
+            margin-bottom: 20px;
+            
+            font-size: 15px;            
+
+            .event-white-text {
+              color: $site-white;
+              font-size: 13px;
+            }
+
+            .event-pink-text {
+              color: $site-pink;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+// media query that breaks at
+@media all and (max-width: 800px) {
+  .purple-content {
+    text-align: center;
+    flex-direction: column;
+    .border-bottom-two {
+      margin: 0 auto;
+    }
+    .upcoming-events {
+      flex-direction: column;
+      .event-box {
+        margin: 0 auto;
+        margin-top: 5%;
+      }
+    }
+    
+  }
+}

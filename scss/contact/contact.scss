@@ -1,0 +1,110 @@
+.contact {
+  margin-bottom: 100px;
+  max-width: $content-width;
+
+  .about-contact {
+    margin-top: 7%;
+
+    .contact-title {
+      font-family: mySecondFont, myThirdFont;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .border-bottom-two {
+      width: 255px;
+      height: 2px;
+      background-color: #000;
+      margin-bottom: 6%;
+    }
+
+    .contact-box {
+      max-width: 722px;
+      display: flex;
+      margin-bottom: 30px;
+      display: flex;
+
+      .contact-image-address {
+        .contact-image {
+          width: 400px;
+          img {
+            width: 100%;
+          }
+        }
+
+        .contact-address {
+          color: $site-black;
+          font-family: "Gill Sans", sans-serif;
+          font-weight: lighter;
+          font-size: 18px;
+          margin-top: 5%;
+        }
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        margin-right: 7%;
+
+        input {
+          width: 529px;
+          height: 60px;
+          background-color: #f5f5f5;
+          border-style: none;
+          padding-left: 20px;
+          margin-bottom: 4%;
+          font-family: "Gill Sans", sans-serif;
+          font-size: 16px;
+        }
+
+        .message-box {
+          height: 199px;
+          background-color: #f5f5f5;
+          border-style: none;
+          padding-left: 20px;
+          padding-top: 10px;
+          font-family: "Gill Sans", sans-serif;
+          font-size: 16px;
+          margin-bottom: 8%;
+        }
+
+        .read-btn {
+          @include site-button();
+          font-family: "Gill Sans", sans-serif;
+          font-size: 16px;
+          border-radius: 2px;
+          width: 167px;
+          height: 60px;
+          padding: 4%;
+          background-color: $site-pink;
+        }
+      }
+    }
+  }
+}
+
+// media query that breaks at
+@media all and (max-width: 800px) {
+  .contact {
+    text-align: center;
+    flex-direction: column;
+
+    .about-contact {
+      .border-bottom-two {
+        margin: 0 auto;
+        margin-bottom: 3%;
+      }
+      .contact-box {
+        flex-direction: column;
+        .contact-image-address {
+          .contact-image {
+            margin: 0 auto;
+          }
+        }
+        .contact-form {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

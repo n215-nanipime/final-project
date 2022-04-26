@@ -1,0 +1,268 @@
+.about-hero {
+  max-width: $content-width;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+
+  .about-hero-text {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .about-price-text {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    // ^^^ by default structure has 15px so we need to do something else
+    margin-bottom: 0; // can add this or change bottom to negative number
+  }
+}
+.about-hero2 {
+  max-width: $content-width;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+
+  .about-hero-text {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .about-price-text {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    // ^^^ by default structure has 15px so we need to do something else
+    margin-bottom: 0; // can add this or change bottom to negative number
+  }
+}
+
+.about-hero3 {
+  max-width: $content-width;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+
+  .about-hero-text {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .about-price-text {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    // ^^^ by default structure has 15px so we need to do something else
+    margin-bottom: 0; // can add this or change bottom to negative number
+  }
+}
+
+.about-hero4 {
+  max-width: $content-width;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour-04.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+
+  .about-hero-text {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .about-price-text {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    // ^^^ by default structure has 15px so we need to do something else
+    margin-bottom: 0; // can add this or change bottom to negative number
+  }
+}
+
+.about-hero5 {
+  max-width: $content-width;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour-05.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+
+  .about-hero-text {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .about-price-text {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    // ^^^ by default structure has 15px so we need to do something else
+    margin-bottom: 0; // can add this or change bottom to negative number
+  }
+}
+
+.about-hero6 {
+  max-width: $content-width;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour-06.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+
+  .about-hero-text {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .about-price-text {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    // ^^^ by default structure has 15px so we need to do something else
+    margin-bottom: 0; // can add this or change bottom to negative number
+  }
+}
+
+.about-hero7 {
+  max-width: $content-width;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour-07.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+
+  .about-hero-text {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .about-price-text {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    // ^^^ by default structure has 15px so we need to do something else
+    margin-bottom: 0; // can add this or change bottom to negative number
+  }
+}
+
+.about-hero8 {
+  max-width: $content-width;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour-08.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+
+  .about-hero-text {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .about-price-text {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    // ^^^ by default structure has 15px so we need to do something else
+    margin-bottom: 0; // can add this or change bottom to negative number
+  }
+}
+
+.about-hero9 {
+  max-width: $content-width;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour-09.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  font-family: mySecondFont;
+  font-weight: bold;
+
+  .about-hero-text {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .about-price-text {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    // ^^^ by default structure has 15px so we need to do something else
+    margin-bottom: 0; // can add this or change bottom to negative number
+  }
+}

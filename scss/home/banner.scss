@@ -1,0 +1,55 @@
+.banner {
+  max-width: $banner-footer-width;
+  height: $banner-height;
+  background-image: linear-gradient(
+      rgba($site-yellow, 0.8),
+      rgba($site-yellow, 0.8)
+    ),
+    url(../images/home-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -80px auto 0 auto;
+  position: relative;
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $site-white;
+
+    .ni-text {
+      color: $site-pink;
+      font-weight:500;
+      padding-bottom: 5%;
+    }
+
+    h1 {
+      color: $site-white;
+      font-size: 60px;
+      font-weight: lighter;
+      font-family: Proxima Nova ScOsf ExCn Rg, sans-serif;
+    }
+
+    button {
+      background-color: $site-pink;
+      width: 121px;
+      height: 40px;
+      color: $site-white;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: lighter;
+    }
+
+    p {
+      font-size: 20px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: lighter;
+      font-style: italic;
+      padding-bottom: 5%;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.days {
+  .day-header {
+    h1 {
+      margin-bottom: 2px;
+      font-family: mySecondFont, myThirdFont;
+      font-size: 60px;
+      font-style: bold;
+    }
+
+    p {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      margin-bottom: 10%;
+    }
+
+    .title-bottom {
+      width: 171px;
+      height: 2px;
+      background-color: #000;
+      margin-bottom: 3%;
+    }
+  }
+
+  .book-btn {
+    @include site-button;
+    width: 133px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+}
+
+// media query that breaks at
+@media all and (max-width: 800px) {
+  .days {
+    text-align: center;
+    flex-direction: column;
+    .day-header {
+      .title-bottom {
+        margin: 0 auto;
+        margin-bottom: 3%;
+      }
+    }
+  }
+}
